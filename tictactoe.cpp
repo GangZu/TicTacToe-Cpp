@@ -433,8 +433,8 @@ void playgame(Player &player, Board &draw){
     int crow,ccol;
     int a=10;
       player.win =0;
-int temp1[draw.col*draw.row];
-int temp2[draw.col*draw.row];
+ int *temp1=new int[draw.col*draw.row];
+ int *temp2=new int[draw.col*draw.row];
 int m=0;
 int n=0;
 int z=0;
@@ -646,10 +646,10 @@ void playgameE(Player &player,Board &draw){
      player.win =0;
      int i=0;
                 int z=0;
-int temp1[draw.col*draw.row];
-int temp2[draw.col*draw.row];
-int temp3[draw.col*draw.row];
-int temp4[draw.col*draw.row];
+int *temp1=new int[draw.col*draw.row];
+int *temp2=new int[draw.col*draw.row];
+int *temp3=new int[draw.col*draw.row];
+int *temp4=new int[draw.col*draw.row];
 int m=0;
 int n=0;
 int o,p;
