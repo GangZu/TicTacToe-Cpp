@@ -10,7 +10,7 @@ void SET_COLOR(int color)
 {
 	WORD wColor;
      
-
+    //test
      HANDLE hStdOut = GetStdHandle(STD_OUTPUT_HANDLE);
      CONSOLE_SCREEN_BUFFER_INFO csbi;
      if(GetConsoleScreenBufferInfo(hStdOut, &csbi))
